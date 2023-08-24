@@ -26,6 +26,7 @@ public class ArrayListDemo {
 			System.out.println(itr.next());
 			
 		}
+		
 		ListIterator litr=al.listIterator();
 		while(litr.hasNext())
 		{

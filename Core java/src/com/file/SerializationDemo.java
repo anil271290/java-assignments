@@ -1,4 +1,4 @@
-package com.file;
+ package com.file;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -18,9 +18,11 @@ class Student implements Serializable
 		this.sname = sname;
 		this.per = per;
 	}
-	
+	@Override
 	public String toString() {
-		return "Roll No : "+rno+"\nStudent Name : "+sname+"\nPercentage : "+per;
+		return "Student [rno=" + rno + ", sname=" + sname + ", per=" + per + "]";
+	
+	
 		
 	}
 	

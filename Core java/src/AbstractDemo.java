@@ -1,4 +1,4 @@
-abstract class abs1
+ abstract class abs1
 {
 	void meth1()
 	{
