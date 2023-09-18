@@ -12,6 +12,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class DataDrivenFW {
@@ -45,12 +46,12 @@ public class DataDrivenFW {
 @Test
 public void test() throws Exception, Exception
 {
-	System.setProperty("webdriver.chrome.driver",
-			"C:\\Users\\ANIL PATEL\\Automation Library\\chromedriver_win32\\chromedriver.exe");
+	System.setProperty("webdriver.gecko.driver",
+			"C:\\Users\\ANIL PATEL\\Automation Library\\geckodriver-v0.33.0-win64\\geckodriver.exe");
 String[][] data=readExcel();
 for(int i=0;i<data.length;i++)
 {
-driver=new ChromeDriver();
+driver=new FirefoxDriver();
 driver.get("https://www.saucedemo.com/");
 driver.manage().window().maximize();
 Thread.sleep(5000);
