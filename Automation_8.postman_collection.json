@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "eef28e6e-aee4-4a55-aa5d-3f708e52f39d",
+		"name": "Automation_8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29501196"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fname\":\"Anil\",\r\n    \"lname\":\"Patel\",\r\n    \"email\":\"anil271290@gmail.com\",\r\n    \"phno\":\"9429239040\",\r\n    \"pass\":\"Aarav\",\r\n    \"gender\":\"male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restapilive.onrender.com/userreg",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"userreg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"anil271290@gmail.com\",\r\n    \"pass\":\"Aarav\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restapilive.onrender.com/userlogin",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"userlogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AdminLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restapilive.onrender.com/alogin",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"alogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Addcategory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "admin-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE2OTQxNDIyNTl9.zVPzBahbpQLy696MDOntNR4r3OdQ15c6sSJNibIyIzQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"catname\":\"Fashion\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restapilive.onrender.com/addcategory",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"addcategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCategory",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "admin-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE2OTQxNDIyNTl9.zVPzBahbpQLy696MDOntNR4r3OdQ15c6sSJNibIyIzQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://restapilive.onrender.com/category",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletcategory",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
