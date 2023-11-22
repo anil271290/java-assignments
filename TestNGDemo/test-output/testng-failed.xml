@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.framework.DataDrivenFW">
+      <class name="Project.Guru99_project2">
         <methods>
           <include name="test"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="screenshotCapture"/>
         </methods>
-      </class> <!-- com.framework.DataDrivenFW -->
+      </class> <!-- Project.Guru99_project2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

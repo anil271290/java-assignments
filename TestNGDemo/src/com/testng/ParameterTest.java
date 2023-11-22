@@ -6,12 +6,14 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.beust.jcommander.Parameter;
+
 public class ParameterTest 
 {
 	ChromeDriver driver;
    @Test
    @Parameters({"username","password"})
-   public void parametertest(@Optional("Abc")String username,String password) throws InterruptedException {
+   public void parametertest(@Optional String username,@Optional String password) throws InterruptedException {
 	   System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\ANIL PATEL\\Automation Library\\chromedriver_win32\\chromedriver.exe");
 		ChromeDriver driver=new ChromeDriver();
